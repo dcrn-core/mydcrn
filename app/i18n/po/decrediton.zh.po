@@ -2,7 +2,7 @@
 # e2f_cn c3 <tx_e2f_cn_c3@ate2f.com>, 2018
 # Matheus Degiovani, 2018
 # Guang Guang <guang.dcr@gmail.com>, 2019
-# 
+#
 msgid ""
 msgstr ""
 "POT-Creation-Date: 2019-10-17T13:25:05.536Z\n"
@@ -1733,13 +1733,13 @@ msgctxt "aboutModal.paragraph2b"
 msgid "Decred contributors"
 msgstr "Decred 贡献者"
 
-#. [aboutModal.decrediton]
+#. [aboutModal.creditor]
 #. defaultMessage is:
 #. Decrediton
 #: app/i18n/extracted/app/components/modals/AboutModal/AboutModal.json
 msgctxt "aboutModal.decrediton"
-msgid "Decrediton"
-msgstr "Decrediton"
+msgid "MyDcrn"
+msgstr "MyDcrn"
 
 #. [appMenu.decrediton]
 #. defaultMessage is:

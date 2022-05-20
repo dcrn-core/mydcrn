@@ -46,7 +46,8 @@ const DaemonLoadingBody = ({
   <div className={cx("page-body getstarted", isTestNet && "testnet-body")}>
     <div className="getstarted loader">
       <div className="loader-settings-logs">
-        {updateAvailable && <UpdateAvailableLink updateAvailable={updateAvailable} /> }
+        {/*temporary remove updateAvailable button*/}
+        {/*{updateAvailable && <UpdateAvailableLink updateAvailable={updateAvailable} /> }*/}
         <>
           <AboutModalButton { ...{ appVersion, updateAvailable } } />
           <InvisibleButton onClick={onShowSettings}>
@@ -65,7 +66,8 @@ const DaemonLoadingBody = ({
           <SlateGrayButton className="tutorial-button" onClick={onShowTutorial}>
             <LearnBasicsMsg />
           </SlateGrayButton>
-          <WhatsNewLink {...{ onShowReleaseNotes, appVersion }} />
+          {/*temporary remove whatsnew link*/}
+          {/*<WhatsNewLink {...{ onShowReleaseNotes, appVersion }} />*/}
         </div>
         <div className="loader-bar">
           <>

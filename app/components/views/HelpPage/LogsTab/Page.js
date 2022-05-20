@@ -33,12 +33,12 @@ const Logs = ({
       !showDcrdLogs ?
         <div className="log-area hidden">
           <div className="log-area-title hidden" onClick={onShowDcrdLogs}>
-            <T id="help.logs.dcrd" m="dcrd" />
+            <T id="help.logs.dcrd" m="dcrnd" />
           </div>
         </div>:
         <div className="log-area expanded">
           <div className="log-area-title expanded" onClick={onHideDcrdLogs}>
-            <T id="help.logs.dcrd" m="dcrd" />
+            <T id="help.logs.dcrd" m="dcrnd" />
           </div>
           <div className="log-area-logs">
             <textarea rows="30" value={dcrdLogs} disabled />
@@ -64,12 +64,12 @@ const Logs = ({
     {!showDecreditonLogs ?
       <div className="log-area hidden">
         <div className="log-area-title hidden" onClick={onShowDecreditonLogs}>
-          <T id="help.logs.decrediton" m="decrediton" />
+          <T id="help.logs.decrediton" m="MyDcrn" />
         </div>
       </div>:
       <div className="log-area expanded">
         <div className="log-area-title expanded" onClick={onHideDecreditonLogs}>
-          <T id="help.logs.decrediton" m="decrediton" />
+          <T id="help.logs.decrediton" m="MyDcrn" />
         </div>
         <div className="log-area-logs">
           <textarea rows="30" value={decreditonLogs} disabled />

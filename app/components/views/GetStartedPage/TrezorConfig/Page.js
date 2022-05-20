@@ -17,7 +17,7 @@ export default ({
     <div className="getstarted loader">
       <div className="content-title">
         <div className="loader-settings-logs">
-          <AboutModalButton version={appVersion} updateAvailable={updateAvailable} />
+          {/*<AboutModalButton version={appVersion} updateAvailable={updateAvailable} />*/}
         </div>
         <div className="go-back-screen-button-area">
           <Tooltip text={ <GoBackMsg /> }><div className="go-back-screen-button" onClick={onHideTrezorConfig}/></Tooltip>

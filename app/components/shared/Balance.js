@@ -27,7 +27,7 @@ export const Balance = ({ currencyDisplay, amount, onClick, bold, large,
             { tail + " " }
           </span> }
           {!hideCurrency && <span className={ [ secondary,classNameUnit ].join(" ") }>
-            DCR
+            DCRN
           </span> }
         </span>
       </div>

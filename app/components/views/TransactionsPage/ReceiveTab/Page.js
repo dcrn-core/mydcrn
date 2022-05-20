@@ -11,7 +11,7 @@ const ReceivePage = ({
   onRequestAddress
 }) => (
   <>
-    <Subtitle title={<T id="receive.subtitle" m="Receive DCR"/>} />
+    <Subtitle title={<T id="receive.subtitle" m="Receive DCRN"/>} />
     <div className="receive-content-nest">
       <div className="receive-content-nest-address-and-qr">
         <div className="receive-content-nest-for-address">

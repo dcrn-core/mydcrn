@@ -19,7 +19,7 @@ const RecentTickets = ({
   return (
     getTransactionsRequestAttempt ? <DecredLoading /> :
       <div className="ticket-tx-wrapper">
-        <div className="home-content-title is-row">
+        {/*<div className="home-content-title is-row">
           {hasTickets
             ? <T id="home.ticketActivityTitle" m="Staking Activity" />
             : <T id="home.noTickets.title" m="No tickets yet" /> }
@@ -28,10 +28,10 @@ const RecentTickets = ({
             <a onClick={goToMyTickets}><T id="home.ticketActivityHistory" m="See all" /> &#8594;</a>
           </div>
           }
-        </div>
-        {hasTickets
+        </div>*/}
+        {/*{hasTickets
           ? <TxHistory overview limit={rowNumber} {...{ getAccountsResponse, transactions: tickets, tsDate }} />
-          : <NoTicketsLinks />}
+          : <NoTicketsLinks />}*/}
       </div>
   );
 };

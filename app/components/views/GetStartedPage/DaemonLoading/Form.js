@@ -63,11 +63,10 @@ const DaemonLoadingBody = ({
           <LoaderTitleMsg />
         </div>
         <div className="loader-buttons">
-          <SlateGrayButton className="tutorial-button" onClick={onShowTutorial}>
+          {/*<SlateGrayButton className="tutorial-button" onClick={onShowTutorial}>
             <LearnBasicsMsg />
           </SlateGrayButton>
-          {/*temporary remove whatsnew link*/}
-          {/*<WhatsNewLink {...{ onShowReleaseNotes, appVersion }} />*/}
+          <WhatsNewLink {...{ onShowReleaseNotes, appVersion }} />*/}
         </div>
         <div className="loader-bar">
           <>

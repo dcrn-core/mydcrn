@@ -26,7 +26,7 @@ const SendPage = ({
   insuficientFunds
 }) => (
   <>
-    <Subtitle title={<T id="send.subtitle" m="Send DCR"/>} />
+    <Subtitle title={<T id="send.subtitle" m="Send DCRN"/>} />
     <div className="send-wrapper-area is-row">
       <TransitionMotionWrapper {...{ styles: getStyles(), willLeave, willEnter, wrapperComponent }} />
       <div className="details-area">

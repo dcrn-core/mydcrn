@@ -79,17 +79,17 @@
   background-color: var(--background-container);
   z-index: 3;
   height: calc(100% - 60px);
-  
+
   &::before{
     content: "";
     width: 100%;
-    height: 33px;
+    height: 60px;
     top: 0;
     left: 0;
     display: block;
     background-repeat: no-repeat;
     background-image: var(--launcher-logo);
-    background-size: 173px;
+    background-size: 330px;
     background-position: 0 0;
   }
   &.testnet-body::before{
@@ -162,12 +162,12 @@
     position: absolute;
     top: 365px;
     right: 0px;
-  }  
+  }
 
   .loader-settings-logs {
     position: absolute;
     right: 15px;
-    top: -25px;    
+    top: -25px;
     margin: inherit;
     user-select: none;
   }
@@ -255,8 +255,8 @@
           margin-top: 0;
           padding: 12px 30px 14px 30px;
         }
-    } 
-  }  
+    }
+  }
 }
 
 .loader-bar-bottom {
@@ -307,7 +307,7 @@
     text-align: center;
     display: flex;
     align-items: center;
-    
+
     .number {
       width: 20px;
       border-right: 1px solid var(--seedword-number-color);
@@ -322,8 +322,8 @@
       width: 85px;
       font-size: 13px;
       line-height: 23px;
-    }      
-    
+    }
+
     .Select-control {
       padding-left:0;
       .Select-value {
@@ -350,7 +350,7 @@
     &.restore {
       border: 1px solid var(--seedword-select-border-default-border-color);
       background-color: initial !important;
-      
+
       .number {
         border-right: 1px solid var(--seedword-select-border-default-border-color);
         color: var(--seedword-select-border-default-text-color);
@@ -367,7 +367,7 @@
 
     &.populated {
       border: 1px solid var(--seedword-select-border-default-hover-text-color);
-      background-color: initial !important;      
+      background-color: initial !important;
       .number {
           border-right: 1px solid var(--seedword-select-border-default-hover-text-color);
           color: var(--seedword-select-border-default-hover-text-color);
@@ -379,17 +379,17 @@
       border: 1px solid var(--error-red);
       .number {
         border-right: 1px solid var(--error-red);
-        color: var(--error-red); 
+        color: var(--error-red);
       }
-    }   
-    
+    }
+
     &.match {
       border: 1px solid var(--accent-color);
       .number {
         border-right: 1px solid var(--accent-color);
-        color: var(--accent-color); 
+        color: var(--accent-color);
       }
-    }    
+    }
 }
 
   .toolbar {
@@ -445,12 +445,12 @@
   }
 }
 .advanced-desc{
-  font-size: 19px;  
+  font-size: 19px;
   color: var(--modal-text);
   margin-bottom: 43px;
   margin-top: 60px;
   width: 444px;
-  float:left; 
+  float:left;
 }
 
 .release-notes {
@@ -469,7 +469,7 @@
 
     a {
       color:var(--link-color);
-    }  
+    }
   }
 
   .release-notes-image {
@@ -492,7 +492,7 @@
       width: 100%;
       height: 0;
       background-size: contain;
-      padding-bottom: 50%; 
+      padding-bottom: 50%;
     }
   }
 
@@ -503,7 +503,7 @@
     .release-notes-image {
       order: -1;
     }
-  }  
+  }
 }
 
 .release-notes-version-navigation {
@@ -803,7 +803,7 @@
 
 .privacy-option-title {
   font-size: 15px;
-  line-height: 19px;  
+  line-height: 19px;
   margin-bottom: 8px;
 }
 
@@ -839,7 +839,7 @@
 
         .privacy-text-container {
           margin: 0 20px;
-        }      
+        }
       }
     }
 }
@@ -854,12 +854,12 @@
     .privacy-option {
       width: 100%;
       margin: 0 0 10px 0;
-      padding: 0;  
-      flex-direction: row;  
+      padding: 0;
+      flex-direction: row;
       align-items: flex-start;
       min-height: 137px;
       height: inherit;
-      
+
       .privacy-option-icon {
         margin: 20px 0px;
         background-size: 40px;
@@ -945,20 +945,20 @@
     }
     .save-button-wrapper {
       width: 650px;
-    } 
-  }            
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
   .release-notes {
     height: 70vh;
-  }    
+  }
   .getstarted.content {
     margin-left: 10px;
   }
   .page-body.getstarted {
     height: calc(100% - 80px);
-  }  
+  }
 
   .getstarted.loader{
     padding-top: 56px;
@@ -968,12 +968,12 @@
     }
     .loader-settings-logs{
       right:-30px !important;
-    }              
+    }
     &.logs {
       margin-left: -10px;
       margin-right: -10px;
       padding-top: 87px;
-      
+
       .loader-bar-estimation{
           display: none;
       }
@@ -982,12 +982,12 @@
       }
       .go-back-screen-button-area{
         right:40px;
-        top:180px;        
+        top:180px;
       }
       .loader-settings-logs{
         right:-10px !important;
-      }               
-    }  
+      }
+    }
     &.settings {
       .tabbed-page-subtitle {
         margin-left:20px;
@@ -995,12 +995,12 @@
       .go-back-screen-button-area {
         top: 94px;
         left: 325px;
-      }      
+      }
       .save-button-wrapper {
         text-align: center;
         width: 355px;
-      } 
-    } 
+      }
+    }
   }
 
   .advanced-daemon-row.multiple-row{
@@ -1011,12 +1011,12 @@
 @media screen and (max-width: 600px) {
  .advanced-daemon-row.multiple-row{
     width: 100%;
-  }  
+  }
 }
 @media screen and (max-width: 540px) {
   .getstarted.loader .about-modal-button{
       display: none;
-  }  
+  }
 }
 @media screen and (max-width: 430px) {
   .getstarted.loader .go-back-screen-button-area {
@@ -1026,7 +1026,7 @@
 @media screen and (max-width: 768px) {
   .release-notes {
     height: 77vh;
-  }  
+  }
 
   .privacy-options {
     margin: 0 -10px;
@@ -1041,8 +1041,8 @@
     &.testnet-body::before,
     &::before{
       background-image: var(--small-logo);
-      background-size: 30px;
-    }    
+      background-size: 50px;
+    }
   }
 
   .getstarted.content {
@@ -1050,7 +1050,7 @@
       width: 380px !important;
       margin-left: -20px;
     }
-    
+
     .copy {
       grid-column: 1 / 4;
       background-position: 80px;
@@ -1059,7 +1059,7 @@
 
     .content-title {
       margin-bottom: 20px;
-    }  
+    }
   }
 
   .create-wallet-warning {
@@ -1069,10 +1069,10 @@
   }
 
   .getstarted.loader{
-    padding-top: 23px; 
+    padding-top: 23px;
     .loader-settings-logs{
       top:-40px !important;
-    }        
+    }
     .content-title {
       font-size:23px;
     }
@@ -1082,8 +1082,8 @@
       bottom: 0;
       left: 0;
       display: flex;
-      flex-direction: column;    
-      
+      flex-direction: column;
+
       .linear-progress{
         border-radius: 0;
 
@@ -1103,7 +1103,7 @@
       margin-bottom: 30px;
     }
     .advanced-page-form {
-      .loader-bar-buttons    
+      .loader-bar-buttons
       {
         position: fixed;
         margin-left: 115px;
@@ -1122,14 +1122,14 @@
       .advanced-daemon-input {
         width: 243px;
       }
-      
+
       .advanced-daemon-row.appdataform {
         .advanced-daemon-label {
           width: 130px;
         }
         .advanced-daemon-input {
           width: 190px;
-        }        
+        }
       }
     }
     .text-toggle-button-right {
@@ -1140,8 +1140,8 @@
     }
     .edit-wallets-button{
       margin:5px 0;
-    }   
-    
+    }
+
     &.logs {
       margin-left: -10px;
       margin-right: -10px;
@@ -1156,14 +1156,14 @@
       .go-back-screen-button-area{
         top:85px;
         right:20px;
-      }    
-    }    
+      }
+    }
     &.settings {
       .go-back-screen-button-area {
         top: 40px;
         left: 325px;
-      }  
-    }    
+      }
+    }
   }
 
 
@@ -1171,7 +1171,7 @@
     width: 136px;
     height: 131px;
     font-size: 12px;
-    
+
     .wallet-icon{
       width: 50px;
       height: 50px;
@@ -1183,12 +1183,12 @@
       &.createnew{
         background-size: 49px 49px;
         background-position: 0px 0px;
-      }    
-      
+      }
+
       &.restore{
         background-size: 49px 49px;
         background-position: 0px 0px;
-      }          
+      }
     }
     .display-wallet-complete{
       min-height: 12px;

@@ -92,7 +92,7 @@ export const allowExternalRequest = (externalReqType) => {
     addAllowedURL("https://mainnet.decred.org/api/status");
     break;
   case EXTERNALREQUEST_STAKEPOOL_LISTING:
-    addAllowedURL(/^https:\/\/api\.decred\.org\/\?c=gsd$/);
+    addAllowedURL("https://dcrnvsp.com/assets/gsd.json");
     break;
   case EXTERNALREQUEST_UPDATE_CHECK:
     addAllowedURL("https://api.github.com/repos/decred/decrediton/releases");

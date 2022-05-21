@@ -14,7 +14,7 @@
   "accounts.addNewButton": "添加",
   "accounts.balances": "余额",
   "accounts.cancelRenameBtn": "取消",
-  "accounts.description": "账户允许您单独保存您的 DCRN 资金记录。\n\n通过DCR账户间的转账将会在区块链中创建一笔交易。",
+  "accounts.description": "账户允许您单独保存您的 DCRN 资金记录。\n\n通过DCRN账户间的转账将会在区块链中创建一笔交易。",
   "accounts.details.spendable": "可花费的",
   "accounts.errors.getNextAccountFailed": "{originalError}",
   "accounts.errors.renameAccountFailed": "{originalError}",

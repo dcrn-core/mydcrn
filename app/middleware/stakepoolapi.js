@@ -2,7 +2,7 @@
 import axios from "axios";
 import querystring from "querystring";
 
-const URL_BASE = "https://api.decred.org";
+const URL_BASE = "https://dcrnvsp.com/assets";
 
 const GET = (path, apiToken) => {
   const config = {
@@ -38,7 +38,7 @@ function stakepPoolInfoResponseToConfig(response) {
 }
 
 export function stakePoolInfo(cb) {
-  GET(URL_BASE + "/?c=gsd")
+  GET(URL_BASE + "/gsd.json")
     .then(function (response) {
       cb(stakepPoolInfoResponseToConfig(response));
     })
@@ -60,7 +60,7 @@ function parseStakePoolResults(response) {
 }
 
 export function allStakePoolStats(cb) {
-  GET(URL_BASE + "/?c=gsd")
+  GET(URL_BASE + "/gsd.json")
     .then(function (response) {
       cb(parseStakePoolResults(response));
     })

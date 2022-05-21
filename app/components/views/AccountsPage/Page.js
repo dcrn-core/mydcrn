@@ -8,7 +8,7 @@ import { WatchOnlyWarnNotification, Subtitle } from "shared";
 
 const AccountsListHeader = ({ onGetNextAccountAttempt, isCreateAccountDisabled }) => <StandaloneHeader
   title={<T id="accounts.title" m=" Accounts" />}
-  description={<T id="accounts.description" m={"Accounts allow you to keep separate records of your DCR funds.\nTransferring DCR across accounts will create a transaction on the blockchain."}/>}
+  description={<T id="accounts.description" m={"Accounts allow you to keep separate records of your DCRN funds.\nTransferring DCRN across accounts will create a transaction on the blockchain."}/>}
   iconClassName="accounts"
   actionButton={
     <WatchOnlyWarnNotification isActive={isCreateAccountDisabled}>

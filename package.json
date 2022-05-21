@@ -1,8 +1,8 @@
 {
-  "name": "decrediton",
-  "productName": "Decrediton",
+  "name": "MyDcrn",
+  "productName": "MyDcrn",
   "version": "1.5.1",
-  "description": "Decrediton based on React, React Router, Webpack, React Hot Loader for rapid application development",
+  "description": "MyDcrn based on React, React Router, Webpack, React Hot Loader for rapid application development",
   "main": "main.js",
   "scripts": {
     "test": "cross-env NODE_ENV=test jest",
@@ -64,7 +64,7 @@
     ]
   },
   "build": {
-    "appId": "com.Electron.Decrediton",
+    "appId": "com.Electron.MyDcrn",
     "artifactName": "${productName}-v${version}.${ext}",
     "dmg": {
       "contents": [
@@ -102,9 +102,9 @@
     ],
     "mac": {
       "extendInfo": {
-        "CFBundleExecutable": "Decrediton",
-        "CFBundleDisplayName": "Decrediton",
-        "CFBundleName": "Decrediton"
+        "CFBundleExecutable": "MyDcrn",
+        "CFBundleDisplayName": "MyDcrn",
+        "CFBundleName": "MyDcrn"
       }
     },
     "win": {
@@ -127,7 +127,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/decred/decrediton.git"
+    "url": "git+https://github.com/Decred-Next/decredniton.git"
   },
   "author": {
     "name": "The Decred developers",
@@ -136,11 +136,11 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/decred/decrediton/issues"
+    "url": "https://github.com/Decred-Next/decredniton/issues"
   },
   "keywords": [
-    "decred",
-    "decrediton",
+    "Decred-Next",
+    "MyDcrn",
     "electron",
     "react",
     "react-router",
@@ -148,7 +148,7 @@
     "webpack",
     "react-hot"
   ],
-  "homepage": "https://github.com/decred/decrediton#readme",
+  "homepage": "https://github.com/Decred-Next/decredniton#readme",
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.0.0",

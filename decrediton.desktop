@@ -1,6 +1,6 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Decrediton
+Name=MyDcrn
 Comment=Decrediton the Decred wallet
 Exec=decrediton %U
 Terminal=false

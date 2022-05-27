@@ -9,7 +9,7 @@ const os = require("os");
 const fs = require("fs");
 
 //const pipeFname = "\\\\.\\pipe\\dcrwallet-test";
-const walletConfPath = path.join(os.homedir(), "AppData", "Local", "Decrediton",
+const walletConfPath = path.join(os.homedir(), "AppData", "Local", "MyDcrn",
   "wallets", "testnet", "default-wallet", "dcrwallet.conf");
 
 function sleep(milli) {

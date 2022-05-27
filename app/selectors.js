@@ -203,13 +203,13 @@ const getTxTypeStr = type => (TRANSACTION_TYPES)[type];
 export const txURLBuilder= createSelector(
   [ network ],
   (network) =>
-    (txHash) => `https://${network !== TESTNET ? "dcrdata" : "testnet"}.decred.org/tx/${txHash}`
+    (txHash) => `https://${network !== TESTNET ? "data" : "testdata"}.dcrn.xyz/tx/${txHash}`
 );
 
 export const blockURLBuilder= createSelector(
   [ network ],
   (network) =>
-    (txHash) => `https://${network !== TESTNET ? "dcrdata" : "testnet"}.decred.org/block/${txHash}`
+    (txHash) => `https://${network !== TESTNET ? "data" : "testdata"}.dcrn.xyz/block/${txHash}`
 );
 
 export const txOutURLBuilder = createSelector(

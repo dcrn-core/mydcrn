@@ -1,22 +1,22 @@
-# decrediton
+# MyDcrn
 
-[![Build Status](https://github.com/decred/decrediton/workflows/Build%20and%20Test/badge.svg)](https://github.com/decred/decrediton/actions)
+[![Build Status](https://github.com/decred/MyDcrn/workflows/Build%20and%20Test/badge.svg)](https://github.com/decred/MyDcrn/actions)
 [![ISC License](https://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 
-decrediton is a cross-platform GUI for decred written in node.js using
+MyDcrn is a cross-platform GUI for decred written in node.js using
 Electron.
 
 ## Installation
 
-Currently decrediton is available on Windows, Linux, and macOS.
+Currently MyDcrn is available on Windows, Linux, and macOS.
 
-Decrediton will NOT use or in any way disrupt the CLI wallet file you may
+MyDcrn will NOT use or in any way disrupt the CLI wallet file you may
 already be using at this time.
 
-Download the decrediton release for your operating system on [decred/decred-binaries](https://github.com/decred/decred-binaries/releases).
+Download the MyDcrn release for your operating system on [decred/decred-binaries](https://github.com/decred/decred-binaries/releases).
 
 On macOS, Ubuntu (14.04 LTS kernel 3.16 and later), and recent Debians, there should be
-no additional dependencies needed (exception: Ubuntu 18.04+, see [issue #1404](https://github.com/decred/decrediton/issues/1404)).
+no additional dependencies needed (exception: Ubuntu 18.04+, see [issue #1404](https://github.com/decred/MyDcrn/issues/1404)).
 
 On Fedora or similar distros you may need to install the libXScrnSaver
 package if you see this error:
@@ -32,21 +32,21 @@ sudo dnf -y install libXScrnSaver
 
 On linux you will need to decompress the package:
 ```bash
-tar -xvzf decrediton-X.X.X.tar.gz
+tar -xvzf MyDcrn-X.X.X.tar.gz
 ```
 and then run the file:
 ```bash
-./decrediton
+./MyDcrn
 ```
 
-This will start dcrd and dcrwallet for you.
+This will start dcrnd and dcrnwallet for you.
 
 On macOS, double-click the .dmg file, drag the .app to your
-Applications folder.  Double click on Decrediton.app to start.
+Applications folder.  Double click on MyDcrn.app to start.
 
 You can also install via [brew cask](https://caskroom.github.io):
 ```bash
-brew cask install decrediton
+brew cask install MyDcrn
 ```
 
 From there follow the on screen instructions to setup your wallet.
@@ -55,16 +55,16 @@ From there follow the on screen instructions to setup your wallet.
 
 When running a release version, there are a few options available.
 
-To see additional debug information (including the output of dcrd and dcrwallet) run:
+To see additional debug information (including the output of dcrnd and dcrnwallet) run:
 
 ```
-decrediton --debug
+MyDcrn --debug
 ```
 
-To pass additional arguments to dcrwallet (such as to increase the logging level run:
+To pass additional arguments to dcrnwallet (such as to increase the logging level run:
 
 ```
-decrediton --extrawalletargs='-d=debug'
+MyDcrn --extrawalletargs='-d=debug'
 ```
 
 ## Development Setup
@@ -87,37 +87,37 @@ To ease node version management, install all top-level tools (node/npm/yarn) usi
 
 ### Decred binaries
 
-Development using the master version of decrediton usually requires using a
-corresponding master version of dcrd/dcrwallet.
+Development using the master version of MyDcrn usually requires using a
+corresponding master version of dcrnd/dcrnwallet.
 
-Follow the instructions to install dcrd, dcrwallet and dcrctl from source from
+Follow the instructions to install dcrnd, dcrnwallet and dcrnctl from source from
 their respective repos:
 
-- [dcrd/dcrctl installation instructions](https://github.com/decred/dcrd#updating)
-- [dcrwallet installation instructions](https://github.com/decred/dcrwallet#installation-and-updating)
+- [dcrnd/dcrnctl installation instructions](https://github.com/decred/dcrnd#updating)
+- [dcrnwallet installation instructions](https://github.com/decred/dcrnwallet#installation-and-updating)
 
 
 ### Basic Development Setup
 
 These steps are usually the only ones required for basic development on
-linux/macOS (after compiling dcrd/dcrwallet/dcrctl from source).
+linux/macOS (after compiling dcrnd/dcrnwallet/dcrnctl from source).
 
 For Windows users, it's usually a good idea to use
 [MSYS2](https://www.msys2.org/) instead of the standard cmd.exe (see below for
 more Windows tips).
 
 ```bash
-git clone https://github.com/decred/decrediton.git
-cd decrediton
+git clone https://github.com/decred/MyDcrn.git
+cd MyDcrn
 mkdir bin/
 cp $GOPATH/bin/dcr* bin/
 yarn
 yarn dev
 ```
 
-### Keeping up with dcrd/dcrwallet changes
+### Keeping up with dcrnd/dcrnwallet changes
 
-If you're developing decrediton improvements on a daily basis, you need to also keep up to date with dcrd/dcrwallet changes (specially when developing things like new grpc calls).
+If you're developing MyDcrn improvements on a daily basis, you need to also keep up to date with dcrnd/dcrnwallet changes (specially when developing things like new grpc calls).
 
 In that case, instead of copying the binaries to `/bin` it's better to symlink
 them so that you only need a single step (go install) to run newer versions of
@@ -125,45 +125,45 @@ these tools:
 
 ```bash
 cd bin
-ln -s `which dcrd` dcrd
-ln -s `which dcrctl` dcrctl
-ln -s `which dcrwallet` dcrwallet
+ln -s `which dcrnd` dcrnd
+ln -s `which dcrnctl` dcrnctl
+ln -s `which dcrnwallet` dcrnwallet
 ```
 
 ### Advanced Daemon Mode
 
-This step is only recommended if you're constantly restarting decrediton. If
+This step is only recommended if you're constantly restarting MyDcrn. If
 you're not developing on a daily basis, you can safely ignore this for the
 moment.
 
-When starting decrediton in RPC (or "normal") mode, it automatically runs dcrd
+When starting MyDcrn in RPC (or "normal") mode, it automatically runs dcrnd
 in the backgound to gather blockchain data. If you need to constantly restart
-decrediton, loading the node every time may be time consuming.
+MyDcrn, loading the node every time may be time consuming.
 
-In that case, it's helpful to run the dcrd node in a separate process and simply
-attach to it between decrediton restarts. In order to see the advanced daemon
-configuration options either start decrediton with the ```--advanced``` option or open ```config.json``` and set the
+In that case, it's helpful to run the dcrnd node in a separate process and simply
+attach to it between MyDcrn restarts. In order to see the advanced daemon
+configuration options either start MyDcrn with the ```--advanced``` option or open ```config.json``` and set the
 ```daemon_start_advanced``` flag to ```true``` as follows:
 
 ```"daemon_start_advanced": true,```
 
 Note: Your config.json file is located in the following directories:
 
-Windows - ```C:\Users\<your-username>\AppData\Local\Decrediton\config.json```
+Windows - ```C:\Users\<your-username>\AppData\Local\MyDcrn\config.json```
 
-macOS - ```$HOME/Library/Application\ Support/Decrediton/config.json```
+macOS - ```$HOME/Library/Application\ Support/MyDcrn/config.json```
 
-Linux - ```~/.config/decrediton/config.json```
+Linux - ```~/.config/MyDcrn/config.json```
 
 Run the following to start the Decred daemon in a standalone terminal window:
 
-Windows - ```dcrd --testnet -u USER -P PASSWORD --rpclisten=127.0.0.1:19119 --rpccert=C:\Users\<username>\AppData\Local\Dcrd\rpc.cert```
+Windows - ```dcrnd --testnet -u USER -P PASSWORD --rpclisten=127.0.0.1:19119 --rpccert=C:\Users\<username>\AppData\Local\dcrnd\rpc.cert```
 
-macOS - ```dcrd --testnet -u USER -P PASSWORD --rpclisten=127.0.0.1:19119 --rpccert=$HOME/Library/Application\ Support/Dcrd/rpc.cert```
+macOS - ```dcrnd --testnet -u USER -P PASSWORD --rpclisten=127.0.0.1:19119 --rpccert=$HOME/Library/Application\ Support/dcrnd/rpc.cert```
 
-Linux - ```dcrd --testnet -u USER -P PASSWORD --rpclisten=127.0.0.1:19119 --rpccert=~/.dcrd/rpc.cert```
+Linux - ```dcrnd --testnet -u USER -P PASSWORD --rpclisten=127.0.0.1:19119 --rpccert=~/.dcrnd/rpc.cert```
 
-Once you restart decrediton, you should be presented with a screen to specify
+Once you restart MyDcrn, you should be presented with a screen to specify
 the node parameters. Note that all of them are present in the command you used
 to start the node for your respective system.
 
@@ -171,11 +171,11 @@ CLI options (including ```--advanced```) when running `yarn dev` are currently n
 
 ## Platform-specific instructions
 
-### macOS 
+### macOS
 
-To start decrediton from command-line (assuming it is installed in `/Applications`):
+To start MyDcrn from command-line (assuming it is installed in `/Applications`):
 
-```$ /Applications/decrediton.app/Contents/MacOS/decrediton```
+```$ /Applications/MyDcrn.app/Contents/MacOS/MyDcrn```
 
 
 ### Windows
@@ -184,7 +184,7 @@ Windows is tricky, due to some things working better on MSYS2, while some things
 only working on cmd.exe, and native module building being very tough to get
 right.
 
-On a day-to-day basis, for development and testing (of general decrediton
+On a day-to-day basis, for development and testing (of general MyDcrn
 functionality) MSYS2 is fine, and usually useful for providing GNU-like CLI
 tools.
 
@@ -231,7 +231,7 @@ The end result for module compilation should be the following files:
 - `app/node_modules/grpc/src/node/extension_binary/electron-v3.0-win32-x64/grpc_node.node`
 
 *Note*: `yarn start` does _not_ currently correctly load the win32ipc module, so
-testing with yarn build/start will fail to correctly unload dcrd/dcrwallet when
+testing with yarn build/start will fail to correctly unload dcrnd/dcrnwallet when
 closing.
 
 
@@ -243,7 +243,7 @@ precompiled binaries for them.
 
 Do note that for the moment, support for this platform is experimental, so you
 might need to tweak stuff (in particular, you'll need to disable hardware
-acceleration and ui animations) to run decrediton on it.
+acceleration and ui animations) to run MyDcrn on it.
 
 ```bash
 yarn rebuild-natives
@@ -302,9 +302,9 @@ If you have any further questions you can find us at:
 ## Issue Tracker
 
 The
-[integrated github issue tracker](https://github.com/decred/decrediton/issues)
+[integrated github issue tracker](https://github.com/decred/MyDcrn/issues)
 is used for this project.
 
 ## License
 
-decrediton is licensed under the [copyfree](http://copyfree.org) ISC License.
+MyDcrn is licensed under the [copyfree](http://copyfree.org) ISC License.

@@ -1,11 +1,11 @@
 # Staking and Governance
 
-Participation in Staking (PoS) is open to everyone and requires time-locking a portion of Your DCR in return for tickets. The purpose of these tickets is twofold:
+Participation in Staking (PoS) is open to everyone and requires time-locking a portion of Your DCRN in return for tickets. The purpose of these tickets is twofold:
 
 - Firstly they serve an automatic function of voting on the validity of new blocks.
 - Secondly they grant the right to partake in the decision-making processes which determines the future of Decred-Next.
 
-The process of staking is essentially a lottery, where tickets are chosen to vote randomly. A successful vote returns the participant the original cost of the ticket and a part of the blockreward as profit in newly created DCR.
+The process of staking is essentially a lottery, where tickets are chosen to vote randomly. A successful vote returns the participant the original cost of the ticket and a part of the blockreward as profit in newly created DCRN.
 
 In case the vote misses (0.5% probability), original cost of the ticket is safely returned without the reward. Average time for a ticket to vote is within 28 days and maximum up to 142 days.
 

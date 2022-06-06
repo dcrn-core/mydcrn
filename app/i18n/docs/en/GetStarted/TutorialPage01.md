@@ -6,4 +6,4 @@ The blockchain holds all of Decred-Next’s transactional data and uses an innov
 
 This hybrid system mitigates weaknesses that PoS and PoW have individually. Furthermore it forms the cornerstone for **smart governance** of the project.
 
-Widespread participation in **staking (PoS)** and **mining (PoW)** helps to protect the neutrality of the network and rewards the participants with newly generated DCR from the blockreward.
+Widespread participation in **staking (PoS)** and **mining (PoW)** helps to protect the neutrality of the network and rewards the participants with newly generated DCRN from the blockreward.

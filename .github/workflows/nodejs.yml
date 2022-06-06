@@ -3,7 +3,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    runs-on: windows-lastest
+    runs-on: ubuntu-22.04
     strategy:
       matrix:
         node-version: [13.x]
@@ -19,8 +19,6 @@ jobs:
       run: yarn
     - name: package
       run: yarn package
-    - name: check i18n dupes
-      run: yarn i18n-check-dupes
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
       with:

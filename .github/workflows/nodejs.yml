@@ -3,7 +3,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: windows-lastest
     strategy:
       matrix:
         node-version: [13.x]

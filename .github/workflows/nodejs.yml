@@ -3,10 +3,10 @@ on: [push, pull_request]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-lastest
     strategy:
       matrix:
-        node-version: [12.x, 13.x]
+        node-version: [13.x]
 
     steps:
     - uses: actions/checkout@v1
@@ -17,14 +17,16 @@ jobs:
 
     - name: yarn
       run: yarn
-    - name: linter checks
-      run: yarn lint
-    - name: tests
-      run: yarn test
-      env:
-        CI: true
-    - name: build
-      run: yarn build
+    - name: package
+      run: yarn package
     - name: check i18n dupes
       run: yarn i18n-check-dupes
-
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: MyDcrn.exe
+        path: ./release/MyDcrn-*.exe
+    - name: Download Artifact
+      uses: actions/download-artifact@v3
+      with:
+        name: MyDcrn.exe

@@ -21,7 +21,7 @@ class AboutModal extends React.Component {
             <T id="aboutModal.paragraph2a" m="Decrediton is free and open source software, developed and designed by the global team of"/> {/*<a onClick={() => shell.openExternal("https://decred.org/contributors/")}>*/}{/*<T id="aboutModal.paragraph2b" m="Decred contributors"/></a>*/}
           </div>
           <div className="about-modal-text-paragraph">
-            <T id="aboutModal.paragraph3" m="Want to help or get involved, check out"/> <a onClick={() => shell.openExternal("https://github.com/Decred-Next/decredniton")}>github.com/Decred-Next/decredniton</a>
+            <T id="aboutModal.paragraph3" m="Want to help or get involved, check out"/> <a onClick={() => shell.openExternal("https://github.com/Decred-Next/mydcrn")}>github.com/Decred-Next/mydcrn</a>
           </div>
         </div>
         <div className="about-modal-bottom-area">

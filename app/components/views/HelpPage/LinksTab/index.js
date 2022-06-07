@@ -13,7 +13,7 @@ export const LinksTab = () => (
   <>
     <Subtitle title={<T id="help.subtitle.project" m="Project Related"/>} />
     <div className="help-icons-list">
-      <HelpLink className={"help-docs-icon"} href="https://dcrn.xyz/help/" title={<T id="help.documentation" m="Documentation" />} subtitle={<T id="help.documentation.subtitle" m="dcrn.xyz/help"/>}/>
+      {/*<HelpLink className={"help-docs-icon"} href="https://dcrn.xyz/help/" title={<T id="help.documentation" m="Documentation" />} subtitle={<T id="help.documentation.subtitle" m="dcrn.xyz/help"/>}/>*/}
       <HelpLink className={"help-stakepools-icon"} href="https://dcrn.xyz/vsp" title={<T id="help.stakepools" m=" VSPs" />} subtitle={<T id="help.stakepools.subtitle" m="dcrn.xyz/vsp"/>}/>
       <HelpLink className={"help-blockchain-explorer-icon"} href="https://data.dcrn.xyz" title={<T id="help.blockchain" m=" Blockchain Explorer" />} subtitle={<T id="help.blockchain.subtitle" m="data.dcrn.xyz"/>}/>
       <HelpLink className={"help-github-icon"} href="https://github.com/Decred-Next/decredniton" title={<T id="help.github.title" m="GitHub"/>} subtitle={<T id="help.github.subtitle" m="github.com/Decred-Next/decredniton"/>} />

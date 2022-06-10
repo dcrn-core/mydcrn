@@ -22,14 +22,8 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
 
-
     - name: yarn
       run: yarn
-
-    - name: dispose python
-      run: sed ./node_modules/dmg-builder/out/dmg.js
-
-
     - name: package
       run: yarn package
     - name: Upload Artifact

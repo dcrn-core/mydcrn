@@ -1,9 +1,6 @@
 # MyDcrn
 
-[![Build Status](https://github.com/decred/MyDcrn/workflows/Build%20and%20Test/badge.svg)](https://github.com/decred/MyDcrn/actions)
-[![ISC License](https://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-
-MyDcrn is a cross-platform GUI for decred written in node.js using
+MyDcrn is a cross-platform GUI for decred-next written in node.js using
 Electron.
 
 ## Installation
@@ -13,10 +10,7 @@ Currently MyDcrn is available on Windows, Linux, and macOS.
 MyDcrn will NOT use or in any way disrupt the CLI wallet file you may
 already be using at this time.
 
-Download the MyDcrn release for your operating system on [decred/decred-binaries](https://github.com/decred/decred-binaries/releases).
-
-On macOS, Ubuntu (14.04 LTS kernel 3.16 and later), and recent Debians, there should be
-no additional dependencies needed (exception: Ubuntu 18.04+, see [issue #1404](https://github.com/decred/MyDcrn/issues/1404)).
+Download the MyDcrn release for your operating system on [Decred-Next/binaries-release](https://github.com/Decred-Next/binary-release).
 
 On Fedora or similar distros you may need to install the libXScrnSaver
 package if you see this error:
@@ -93,8 +87,8 @@ corresponding master version of dcrnd/dcrnwallet.
 Follow the instructions to install dcrnd, dcrnwallet and dcrnctl from source from
 their respective repos:
 
-- [dcrnd/dcrnctl installation instructions](https://github.com/decred/dcrnd#updating)
-- [dcrnwallet installation instructions](https://github.com/decred/dcrnwallet#installation-and-updating)
+- [dcrnd/dcrnctl installation instructions](https://github.com/Decred-Next/dcrnd#updating)
+- [dcrnwallet installation instructions](https://github.com/Decred-Next/dcrnwallet#installation-and-updating)
 
 
 ### Basic Development Setup
@@ -107,7 +101,7 @@ For Windows users, it's usually a good idea to use
 more Windows tips).
 
 ```bash
-git clone https://github.com/decred/MyDcrn.git
+git clone https://github.com/Decred-Next/MyDcrn.git
 cd MyDcrn
 mkdir bin/
 cp $GOPATH/bin/dcr* bin/
@@ -289,21 +283,6 @@ If you're only interested in a tar.gz, you can alternatively use:
 ```bash
 yarn package-dev-linux
 ```
-
-## Contact
-
-If you have any further questions you can find us at:
-
-- irc.freenode.net (channel #decred)
-- [webchat](https://webchat.freenode.net/?channels=decred)
-- forum.decred.org
-- decred.slack.com
-
-## Issue Tracker
-
-The
-[integrated github issue tracker](https://github.com/decred/MyDcrn/issues)
-is used for this project.
 
 ## License
 

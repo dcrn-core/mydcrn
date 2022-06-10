@@ -7,7 +7,7 @@ jobs:
     strategy:
       matrix:
         node-version: [13.x]
-        python-version: ["3.6"]
+        python-version: ["2.7"]
 
     steps:
     - uses: actions/checkout@v1
@@ -25,6 +25,11 @@ jobs:
 
     - name: yarn
       run: yarn
+
+    - name: dispose python
+      run: sed ./node_modules/dmg-builder/out/dmg.js
+
+
     - name: package
       run: yarn package
     - name: Upload Artifact

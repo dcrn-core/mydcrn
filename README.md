@@ -119,7 +119,7 @@ these tools:
 
 ```bash
 cd bin
-ln -s `which dcrnd` dcrnd
+ln -s `which dcrd` dcrd
 ln -s `which dcrnctl` dcrnctl
 ln -s `which dcrnwallet` dcrnwallet
 ```

@@ -225,7 +225,7 @@
     "autobind-decorator": "^2.1.0",
     "axios": "^0.18.1",
     "dom-helpers": "^3.4.0",
-    "electron-builder": "^21.2.0",
+    "electron-builder": "^23.0.2",
     "electron-devtools-installer": "^2.2.4",
     "electron-rebuild": "^1.8.6",
     "enzyme-adapter-react-16": "^1.12.1",

@@ -29,9 +29,9 @@ jobs:
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: MyDcrn.exe
-        path: ./release/MyDcrn-*.exe
+        name: MyDcrn.dmg
+        path: ./release/MyDcrn-*.dmg
     - name: Download Artifact
       uses: actions/download-artifact@v3
       with:
-        name: MyDcrn.exe
+        name: MyDcrn.dmg

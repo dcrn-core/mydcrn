@@ -8,13 +8,14 @@ import { DecredLoading, NoStats } from "indicators";
 import { Tooltip, Subtitle } from "shared";
 
 
-const subtitleMenu = ({ allStakePoolStats, hasStats }) => (
+//const subtitleMenu = ({ allStakePoolStats, hasStats }) => (
+const subtitleMenu = ({ hasStats }) => (
   <div className="my-tickets-stats-links">
-    { allStakePoolStats.length > 0 &&
+    {/*{ allStakePoolStats.length > 0 &&
       <Tooltip text={<T id="mytickets.statistics.stakepoolstats.title" m="VSP" />}>
         <Link to="/tickets/statistics/stakepool" activeClassName="my-tickets-active-chart-link stakepool" className="stakepool"/>
       </Tooltip>
-    }
+    }*/}
     { hasStats &&
       <>
         <Tooltip text={<T id="mytickets.statistics.stakerewards.link" m="Stake Rewards" />}>
@@ -43,7 +44,7 @@ const TicketsStatsPage = ({ getMyTicketsStatsRequest, hasStats, hasTickets, allS
             <Route path="/tickets/statistics/stakerewards" component={StakeRewardsChartPage} />
             <Route path="/tickets/statistics/stakepool" component={StakePoolStats} />
             <Route path="/tickets/statistics/heatmap" component={HeatmapStats} />
-            {hasStats || allStakePoolStats.length > 0 ? <Redirect from="/tickets/statistics" exact to={allStakePoolStats.length > 0 ? "/tickets/statistics/stakepool" : hasStats ? "/tickets/statistics/stakerewards" : ""}/> : null}
+            {hasStats || allStakePoolStats.length > 0 ? <Redirect from="/tickets/statistics" exact to={allStakePoolStats.length > 0 ? "/tickets/statistics/stakerewards" : hasStats ? "/tickets/statistics/stakerewards" : ""}/> : null}
           </Switch>
         }
       </div>

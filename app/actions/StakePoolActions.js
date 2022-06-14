@@ -3,7 +3,7 @@ import Promise from "promise";
 import { getWalletCfg, updateStakePoolConfig } from "config";
 import { importScriptAttempt, rescanAttempt } from "./ControlActions";
 import * as sel from "../selectors";
-import * as wallet from "wallet";
+import * as wallet from "../wallet";
 import { TESTNET, MAINNET } from "constants";
 
 export const GETSTAKEPOOLSTATS_ATTEMPT = "GETSTAKEPOOLSTATS_ATTEMPT";

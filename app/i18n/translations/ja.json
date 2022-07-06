@@ -1,4 +1,5 @@
 {
+  "purchaseTickets.errors.insufficientBalance": "Please don't purchase exceed 100 tickets",
   "aboutModal.decrediton": "Decredition",
   "aboutModal.licensing": "ライセンス情報",
   "aboutModal.paragraph1": "Electronを使用してnode.jsで書かれたDecred用のクロスプラットフォームGUIウォレット",

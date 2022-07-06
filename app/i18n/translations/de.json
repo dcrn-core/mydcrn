@@ -1,4 +1,5 @@
 {
+  "purchaseTickets.errors.unableTicketNum": "Please don't purchase exceed 100 tickets",
   "aboutModal.decrediton": "MyDcrn",
   "aboutModal.licensing": "Lizenzinformationen",
   "aboutModal.paragraph1": "Ein plattformübergreifendes GUI Wallet für Decred, geschrieben in node.js unter Benutzung von Electron",

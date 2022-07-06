@@ -22,7 +22,8 @@ const PurchaseTicketsForm = ({
   onToggleShowAdvanced,
   account,
   willEnter,
-  willLeave
+  willLeave,
+  getInvalidMessage
 }) => (
   <>
     <div className="purchase-ticket-area-row is-row">
@@ -38,7 +39,7 @@ const PurchaseTicketsForm = ({
         <NumTicketsInput
           required
           invalid={!getIsValid()}
-          invalidMessage={<T id="purchaseTickets.errors.insufficientBalance" m="Not enough funds" />}
+          invalidMessage={getInvalidMessage()}
           numTickets={numTicketsToBuy}
           incrementNumTickets={onIncrementNumTickets}
           decrementNumTickets={onDecrementNumTickets}
@@ -77,5 +78,7 @@ const PurchaseTicketsForm = ({
       />
     </div>
   </>);
+
+
 
 export default PurchaseTicketsForm;

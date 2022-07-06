@@ -1,4 +1,5 @@
 {
+  "purchaseTickets.errors.unableTicketNum": "Please don't purchase exceed 100 tickets",
   "aboutModal.decrediton": "Decrediton2",
   "aboutModal.paragraph1": "BLablabla A cross platform GUI Wallet for Decred written in node.js using Electron",
   "aboutModal.paragraph2a": "hehehe Decrediton is free and open source software, developed and designed by the global team of",

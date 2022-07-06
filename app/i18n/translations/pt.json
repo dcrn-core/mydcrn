@@ -1,4 +1,5 @@
 {
+  "purchaseTickets.errors.unableTicketNum": "Please don't purchase exceed 100 tickets",
   "aboutModal.decrediton": "Decrediton",
   "aboutModal.licensing": "Informação de licenciamento",
   "aboutModal.paragraph1": "Uma Carteira GUI multiplataforma escrita em node.js usando Electron",

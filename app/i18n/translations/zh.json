@@ -455,6 +455,7 @@
   "purchaseTickets.currentStakepool": "当前的选票矿池",
   "purchaseTickets.errors.expiryRequred": "到期无效",
   "purchaseTickets.errors.insufficientBalance": "资金不足",
+  "purchaseTickets.errors.unableTicketNum": "单次购票不能超过100票",
   "purchaseTickets.errors.invalidTicketFee": "选票费用无效",
   "purchaseTickets.errors.invalidTxFee": "无效的交易费",
   "purchaseTickets.expiry": "过期",

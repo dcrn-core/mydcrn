@@ -9,6 +9,7 @@ import PurchaseTicketsQuickBar from "./PurchaseTicketsQuickBar";
 import { injectIntl } from "react-intl";
 import { isNullOrUndefined } from "util";
 import { MIN_RELAY_FEE, MAX_POSSIBLE_FEE_INPUT } from "constants";
+import { FormattedMessage as T } from "react-intl";
 
 @autobind
 class PurchaseTickets extends React.Component {
@@ -112,6 +113,7 @@ class PurchaseTickets extends React.Component {
             willEnter: null,
             willLeave: null,
             getIsValid: null,
+            getInvalidMessage:null,
             handleOnKeyDown: null
           }, this)
         }}
@@ -188,8 +190,18 @@ class PurchaseTickets extends React.Component {
 
   getIsValid() {
     if (!this.getCanAffordTickets()) return false;
+    if (this.state.numTicketsToBuy > 100) return false;
     if (this.getErrors()) return false;
     return true;
+  }
+
+  getInvalidMessage() {
+    if (!this.getCanAffordTickets()) {
+      return <T id="purchaseTickets.errors.insufficientBalance" m="Not enough funds" />;
+    }
+    if (this.state.numTicketsToBuy > 100) {
+      return <T id="purchaseTickets.errors.unableTicketNum" m="Please don't purchase exceed 100 tickets" />;
+    }
   }
 
   onPurchaseTickets(privpass) {
@@ -228,7 +240,9 @@ class PurchaseTickets extends React.Component {
   onChangeExpiry(expiry) {
     const expiryError = (isNaN(expiry) || expiry < 0 || isNullOrUndefined(expiry) || expiry === "");
     this.setState({
-      expiry: expiry.replace(/[^\d.]/g, ""),
+
+      //expiry: expiry.replace(/[^\d.]/g, ""),
+      expiry: parseInt(expiry),
       expiryError: expiryError
     });
   }
@@ -237,6 +251,7 @@ class PurchaseTickets extends React.Component {
     const { ticketFeeError, txFeeError, expiryError, numTicketsToBuy } = this.state;
     return ticketFeeError || txFeeError || expiryError || !numTicketsToBuy;
   }
+
 }
 
 export default injectIntl(purchaseTickets(PurchaseTickets));

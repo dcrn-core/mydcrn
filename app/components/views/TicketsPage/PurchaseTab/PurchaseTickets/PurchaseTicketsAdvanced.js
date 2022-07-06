@@ -90,6 +90,7 @@ const PurchaseTicketsAdvanced = ({
       label={<T id="purchaseTickets.advanced.expiry" m="Expiry" />}
       className="expiry">
       <BlocksInput
+        disabled readOnly
         required
         invalid={expiryError}
         invalidMessage={<T id="purchaseTickets.errors.expiryRequred" m="Invalid expiry" />}
@@ -128,5 +129,7 @@ const PurchaseTicketsAdvanced = ({
       />
     </PurchaseTicketAdvancedInfo>
   </div>);
+
+
 
 export default PurchaseTicketsAdvanced;

@@ -1,4 +1,5 @@
 {
+  "purchaseTickets.errors.unableTicketNum": "Please don't purchase exceed 100 tickets",
   "aboutModal.decrediton": "Decrediton",
   "aboutModal.licensing": "Información de licencia",
   "aboutModal.paragraph1": "Una cartera multiplataforma y con interfaz gráfica para Decred desarrollada en node.js con Electron",

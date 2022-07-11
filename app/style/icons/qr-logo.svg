@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 13 13"><defs><style>.a{fill:#fff;}.b{fill:#2970ff;}.c{fill:url(#a);}</style><linearGradient id="a" x1="6" y1="6.5" x2="11" y2="6.5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2dd8a3"/><stop offset="0.93" stop-color="#39d8aa"/></linearGradient></defs><title>blue-green-with-white-bg</title><rect class="a" width="13" height="13"/><polygon class="b" points="3 9 4 9 4 10 7 10 7 11 3 11 3 10 2 10 2 6 3 6 3 5 4 5 4 4 3 4 3 3 2 3 2 2 4 2 4 3 5 3 5 4 6 4 6 5 7 5 7 6 4 6 4 7 3 7 3 9"/><polygon class="c" points="11 3 11 7 10 7 10 8 9 8 9 9 10 9 10 10 11 10 11 11 9 11 9 10 8 10 8 9 7 9 7 8 6 8 6 7 9 7 9 6 10 6 10 4 9 4 9 3 6 3 6 2 10 2 10 3 11 3"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;background-color:white;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#397AFA;}
+	.st1{fill:#71DDBC;}
+</style>
+<g>
+	<path class="st0" d="M28,360.3V149.6c0-4.3,2.4-8,5.7-9.9L224,22.8c3.3-1.9,7.6-2.4,11.3-0.5l46.8,21.7c4.3,1.9,7.1,6.1,7.1,10.9
+		v161.3c0,8.5-9,14.6-17,10.9l-103.7-48.2c-8-3.8-17,1.9-17,10.9v222c0,9-9.4,14.6-17.5,10.4l-99.9-51.5
+		C30.4,368.8,28,364.5,28,360.3z"/>
+	<path class="st1" d="M472,139.7v210.7c0,4.3-2.4,8-5.7,9.9L276,477.2c-3.3,1.9-7.6,2.4-11.3,0.5l-46.8-21.7
+		c-4.3-1.9-7.1-6.1-7.1-10.9V283.8c0-8.5,9-14.6,17-10.9l103.7,48.2c8,3.8,17-1.9,17-10.9V87.8c0-9,9.4-14.6,17.5-10.4l99.9,51.5
+		C469.6,131.2,472,135,472,139.7z"/>
+</g>
+</svg>

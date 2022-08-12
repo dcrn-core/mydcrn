@@ -1,6 +1,6 @@
 # MyDcrn
 
-MyDcrn is a cross-platform GUI for decred-next written in node.js using
+MyDcrn is a cross-platform GUI for DCRN written in node.js using
 Electron.
 
 ## Installation
@@ -10,7 +10,7 @@ Currently MyDcrn is available on Windows, Linux, and macOS.
 MyDcrn will NOT use or in any way disrupt the CLI wallet file you may
 already be using at this time.
 
-Download the MyDcrn release for your operating system on [Decred-Next/binaries-release](https://github.com/Decred-Next/binary-release).
+Download the MyDcrn release for your operating system on [dcrnofficial/binaries-release](https://github.com/dcrnofficial/binary-release).
 
 On Fedora or similar distros you may need to install the libXScrnSaver
 package if you see this error:
@@ -87,8 +87,8 @@ corresponding master version of dcrnd/dcrnwallet.
 Follow the instructions to install dcrnd, dcrnwallet and dcrnctl from source from
 their respective repos:
 
-- [dcrnd/dcrnctl installation instructions](https://github.com/Decred-Next/dcrnd#updating)
-- [dcrnwallet installation instructions](https://github.com/Decred-Next/dcrnwallet#installation-and-updating)
+- [dcrnd/dcrnctl installation instructions](https://github.com/dcrnofficial/dcrnd#updating)
+- [dcrnwallet installation instructions](https://github.com/dcrnofficial/dcrnwallet#installation-and-updating)
 
 
 ### Basic Development Setup
@@ -101,7 +101,7 @@ For Windows users, it's usually a good idea to use
 more Windows tips).
 
 ```bash
-git clone https://github.com/Decred-Next/MyDcrn.git
+git clone https://github.com/dcrnofficial/MyDcrn.git
 cd MyDcrn
 mkdir bin/
 cp $GOPATH/bin/dcr* bin/

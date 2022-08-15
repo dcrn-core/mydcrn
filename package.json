@@ -127,7 +127,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Decred-Next/decredniton.git"
+    "url": "git+https://github.com/dcrnofficial/mydcrn.git"
   },
   "author": {
     "name": "The Decred developers",
@@ -136,10 +136,10 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Decred-Next/decredniton/issues"
+    "url": "https://github.com/dcrnofficial/mydcrn/issues"
   },
   "keywords": [
-    "Decred-Next",
+    "DCRN",
     "MyDcrn",
     "electron",
     "react",
@@ -148,7 +148,7 @@
     "webpack",
     "react-hot"
   ],
-  "homepage": "https://github.com/Decred-Next/decredniton#readme",
+  "homepage": "https://github.com/dcrnofficial/mydcrn#readme",
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.0.0",

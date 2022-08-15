@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=MyDcrn
-Comment=MyDcrn the Decred-Next wallet
+Comment=MyDcrn the DCRN wallet
 Exec=decrediton %U
 Terminal=false
 Type=Application
